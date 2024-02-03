@@ -1,0 +1,8 @@
+.animated-link {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .animated-link:hover {
+    transform: scale(1.1);
+    color: #ff6347; /* Change the color to whatever you prefer */
+  }

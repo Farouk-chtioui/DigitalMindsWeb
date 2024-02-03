@@ -1,8 +1,9 @@
 <?php
-// FILEPATH: /C:/Users/chtio/OneDrive/Desktop/DigitalMindsWeb/Mobile-store/src/app/backend/showproducts.php
-
 // Import connection.php
 require_once 'connection.php';
+
+// Set the content type to JSON
+header('Content-Type: application/json');
 
 // Query the products table
 $query = "SELECT * FROM products";
@@ -17,7 +18,7 @@ if ($result) {
     echo json_encode($products);
 } else {
     // Handle the error
-    echo "Error: " . mysqli_error($connection);
+    echo json_encode(["error" => mysqli_error($connection)]);
 }
 
 // Close the database connection

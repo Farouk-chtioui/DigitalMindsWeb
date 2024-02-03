@@ -12,3 +12,15 @@
 .custom-height {
     height: 100vh; /* Adjust this to your preferred height */
   }
+  .btn.animated-button {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .btn.animated-button:hover {
+    background-color: #333;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+  }

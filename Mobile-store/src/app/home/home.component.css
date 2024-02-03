@@ -1,0 +1,14 @@
+.gif-background {
+    background: url('../../assets/images/bk.gif') no-repeat ; 
+
+    background-size: cover;
+  }
+  
+  .phone-model {
+    color: #fff; /* Change this to your preferred text color */
+    text-align: center;
+  }
+  
+.custom-height {
+    height: 100vh; /* Adjust this to your preferred height */
+  }
